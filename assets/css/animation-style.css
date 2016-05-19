@@ -1,0 +1,35 @@
+.navbar {
+	animation-name: nav-col;
+	animation-duration: 3s;
+}
+
+@keyframes nav-col {
+  from {background-color: #1abc9c;}
+  to {background-color: yellow;}
+}
+
+
+/*I had trouble getting this animation to work :( */
+
+.profile-photo-container {
+	position: relative;
+	height: 155px;
+	
+}
+
+.profile-photo {
+	position: absolute;
+	right: 295px;
+	animation-name: p-photo-animate;
+	animation-duration: 4s;
+	animation-delay: 4s;
+}
+
+@keyframes p-photo-animate {
+	  0%   {right: 295px;}
+    25%  {right: 395px;}
+    0%   {right: 295px;}
+    75%  {right: 195px;}
+    100% {right: 295px;}
+}
+
